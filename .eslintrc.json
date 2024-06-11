@@ -1,34 +1,8 @@
 {
-  "extends": [
-    "@rocketseat/eslint-config/react",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier"
-  ],
-  "plugins": [
-    "simple-import-sort",
-    "@typescript-eslint"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
+  "extends":["@rocketseat/eslint-config/react"],
+  "plugins": ["simple-import-sort"],
   "rules": {
-    "simple-import-sort/imports": "warn",
-    "prettier/prettier": [
-      "warn",
-      {
-        "arrowParens": "avoid",
-        "endOfLine": "auto",
-        "semi": false,
-        "singleAttributePerLine": true
-      }
-    ],
-    "no-unused-vars": "off",
-    "no-explicit-any": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-unused-vars": "off"
+    "simple-import-sort/imports": "error"
   }
+
 }
