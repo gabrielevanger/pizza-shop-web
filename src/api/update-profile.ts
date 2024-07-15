@@ -4,6 +4,6 @@ interface UpdateProfileBody {
   name: string
   description: string | null
 }
-export function updateProfile({ name, description }: UpdateProfileBody) {
+export async function updateProfile({ name, description }: UpdateProfileBody) {
   return api.put('/profile', { name, description })
 }
